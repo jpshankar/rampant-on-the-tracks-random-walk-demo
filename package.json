@@ -6,14 +6,18 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d out"
   },
+  "homepage": "https://jpshankar.github.io/rampant-on-the-tracks-random-walk-demo",
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@hugoalh/range-iterator": "^3.0.0",
     "@types/randomcolor": "^0.5.9",
     "@uidotdev/usehooks": "^2.4.1",
     "extra-bigint": "^1.2.1",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.13.0",
     "konva": "^10.0.2",
     "postcss": "^8.5.6",
